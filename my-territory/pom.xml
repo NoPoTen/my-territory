@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>com.potential</artifactId>
+        <groupId>parent</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>my-territory</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>my-territory-dal</module>
+    <module>my-territory-server</module>
+    <module>my-territory-web</module>
+  </modules>
+</project>
