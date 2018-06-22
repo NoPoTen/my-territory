@@ -9,10 +9,11 @@
     <!-- 加载配置属性文件 -->
 	<context:property-placeholder ignore-unresolvable="true" location="classpath:config.properties" />
 
-	<mvc:annotation-driven >
+	<mvc:annotation-driven />
 
-	</mvc:annotation-driven>
+	<!-- 对静态资源文件的访问， 将无法mapping到Controller的path交给default servlet handler处理 -->
+	<mvc:default-servlet-handler />
+
 	<!-- 静态资源映射 -->
-    <mvc:resources mapping="/static/**" location="/static/" cache-period="31536000"/>
-	
+	<mvc:resources mapping="/static/**" location="/static/" cache-period="31536000"/>
 </beans>
